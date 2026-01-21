@@ -3,9 +3,11 @@
 A simple yet effective infrared (IR) based security system designed to detect unauthorized entry. This alarm triggers a buzzer when the IR beam between the emitter and sensor is established, acting as an entryway monitor.'s resistance is high, that "shortcut" is blocked, and the buzzer remains silent.
 
 🏗️ Hardware Architecture
+
 The heartbeat of this security system lies in the synergy between optical sensing and acoustic signaling. By leveraging the physical properties of infrared light, the circuit transforms a simple light beam into a reliable digital "tripwire."
 
 🔬 Core Components
+
 The Transmitter (IR LED): Acting as the invisible light source, the IR LED emits a constant, focused infrared beam across the monitored entryway.
 
 The Sensor (IR Photodiode): The "eyes" of the system. It functions as a light-dependent switch, fluctuating its internal resistance based on the photons it captures from the LED.
@@ -17,6 +19,7 @@ The Powerhouse (9V DC Battery): A stable 9V source provides the necessary potent
 The Annunciator (Buzzer): The final output stage of the circuit. It converts electrical energy into a high-frequency acoustic signal to alert users the moment the beam is established.
 
 🔌 How the Circuit Works
+
 The circuit is designed with a parallel logic path. The buzzer's state depends entirely on the resistance level of the photodiode, which changes based on IR light exposure.
 
 🟢 Scenario A: IR Beam is Intact (No Obstruction)
@@ -38,6 +41,7 @@ Result: The photodiode acts like an open switch, cutting off the electrical path
 Outcome: ALARM OFF (Buzzer is silent).
 
 💡 Circuit Logic Summary
+
 The efficiency of this design lies in the Parallel Path behavior:
 
 Light Detected: The photodiode provides a "shortcut" for the current, activating the buzzer.
